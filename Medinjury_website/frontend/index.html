@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MedInjury AI - Smart Injury Detector</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papLFxJbwbdwvHb4TIn+o0Yu+h2tSU5Kp7xG1Oq3AaT7Y9Zcd4sIBx3jD08kQsh9u3cP5OhT4e3oNLmXWcU9Ig==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fa-solid fa-heart-pulse"></i> MedInjury AI</h1>
+    <p>Upload an injury image and let our AI predict the injury type instantly.</p>
+
+    <div class="upload-box">
+      <i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
+      <input type="file" id="imageInput" accept="image/*" />
+      <button onclick="uploadImage()">Analyze Image</button>
+    </div>
+
+    <div id="resultBox" class="hidden">
+      <h3><i class="fa-solid fa-microscope"></i> Prediction Result</h3>
+      <p id="resultText"></p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 MedInjury AI. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
